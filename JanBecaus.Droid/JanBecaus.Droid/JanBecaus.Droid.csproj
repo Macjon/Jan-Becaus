@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{562039C6-E142-49BA-98F6-B171833628B3}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JanBecaus.Droid</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AssemblyName>JanBecaus.Droid</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundProvider.cs" />
+    <Compile Include="SplashActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\raw\amstelgoldrace.mp3" />
+    <AndroidResource Include="Resources\raw\beegees.mp3" />
+    <AndroidResource Include="Resources\raw\blackeyedpeas.mp3" />
+    <AndroidResource Include="Resources\raw\ciudadjuarez.mp3" />
+    <AndroidResource Include="Resources\raw\doscervezas.mp3" />
+    <AndroidResource Include="Resources\raw\dowjones.mp3" />
+    <AndroidResource Include="Resources\raw\driekwartier.mp3" />
+    <AndroidResource Include="Resources\raw\europeanmotorshow.mp3" />
+    <AndroidResource Include="Resources\raw\eyjafjallajokull.mp3" />
+    <AndroidResource Include="Resources\raw\gameofshadows.mp3" />
+    <AndroidResource Include="Resources\raw\goldenglobes.mp3" />
+    <AndroidResource Include="Resources\raw\iowa.mp3" />
+    <AndroidResource Include="Resources\raw\judelaw.mp3" />
+    <AndroidResource Include="Resources\raw\kattepis.mp3" />
+    <AndroidResource Include="Resources\raw\markwebber.mp3" />
+    <AndroidResource Include="Resources\raw\milow.mp3" />
+    <AndroidResource Include="Resources\raw\norahjones.mp3" />
+    <AndroidResource Include="Resources\raw\obama.mp3" />
+    <AndroidResource Include="Resources\raw\partofthejob.mp3" />
+    <AndroidResource Include="Resources\raw\pussy.mp3" />
+    <AndroidResource Include="Resources\raw\rauweblues.mp3" />
+    <AndroidResource Include="Resources\raw\rocknroll.mp3" />
+    <AndroidResource Include="Resources\raw\score.mp3" />
+    <AndroidResource Include="Resources\raw\sherlockholmes.mp3" />
+    <AndroidResource Include="Resources\raw\sighnomore.mp3" />
+    <AndroidResource Include="Resources\raw\tomorrowland.mp3" />
+    <AndroidResource Include="Resources\raw\tonyblair.mp3" />
+    <AndroidResource Include="Resources\raw\usainbolt.mp3" />
+    <AndroidResource Include="Resources\raw\vayacondios.mp3" />
+    <AndroidResource Include="Resources\raw\wallstreet.mp3" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\values\Style.xml" />
+    <AndroidResource Include="Resources\drawable\splash.jpg" />
+    <AndroidResource Include="Resources\drawable\button.9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\raw\" />
+  </ItemGroup>
+</Project>

@@ -3,3 +3,4 @@ _Store
 *.pidb
 bin
 obj
+.DS_Store
