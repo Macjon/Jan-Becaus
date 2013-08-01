@@ -18,5 +18,9 @@
 	<string>Just Becaus</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.flowpilots.justbecaus</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
 </dict>
 </plist>
