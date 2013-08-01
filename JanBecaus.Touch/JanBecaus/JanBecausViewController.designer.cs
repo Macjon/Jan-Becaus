@@ -11,11 +11,15 @@ namespace JanBecaus
 	[Register ("JanBecausViewController")]
 	partial class JanBecausViewController
 	{
-		[Action ("ButtonTouched:")]
-		partial void ButtonTouched (MonoTouch.UIKit.UIButton sender);
+		[Outlet]
+		MonoTouch.UIKit.UIScrollView ScrollView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (ScrollView != null) {
+				ScrollView.Dispose ();
+				ScrollView = null;
+			}
 		}
 	}
 }

@@ -44,6 +44,7 @@
     <MtouchDebug>true</MtouchDebug>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -83,6 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\sounds\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -94,41 +97,56 @@
     <Compile Include="JanBecausViewController.designer.cs">
       <DependentUpon>JanBecausViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Utils\UIColorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <BundleResource Include="Resources\amstelgoldrace.mp3" />
-    <BundleResource Include="Resources\eyjafjallajokull.mp3" />
-    <BundleResource Include="Resources\beegees.mp3" />
-    <BundleResource Include="Resources\blackeyedpeas.mp3" />
-    <BundleResource Include="Resources\ciudadjuarez.mp3" />
-    <BundleResource Include="Resources\doscervezas.mp3" />
-    <BundleResource Include="Resources\dowjones.mp3" />
-    <BundleResource Include="Resources\driekwartier.mp3" />
-    <BundleResource Include="Resources\europeanmotorshow.mp3" />
-    <BundleResource Include="Resources\gameofshadows.mp3" />
-    <BundleResource Include="Resources\goldenglobes.mp3" />
-    <BundleResource Include="Resources\iowa.mp3" />
-    <BundleResource Include="Resources\judelaw.mp3" />
-    <BundleResource Include="Resources\kattepis.mp3" />
-    <BundleResource Include="Resources\markwebber.mp3" />
-    <BundleResource Include="Resources\milow.mp3" />
-    <BundleResource Include="Resources\norahjones.mp3" />
-    <BundleResource Include="Resources\obama.mp3" />
-    <BundleResource Include="Resources\partofthejob.mp3" />
-    <BundleResource Include="Resources\pussy.mp3" />
-    <BundleResource Include="Resources\rauweblues.mp3" />
-    <BundleResource Include="Resources\rocknroll.mp3" />
-    <BundleResource Include="Resources\score.mp3" />
-    <BundleResource Include="Resources\sherlockholmes.mp3" />
-    <BundleResource Include="Resources\sighnomore.mp3" />
-    <BundleResource Include="Resources\tomorrowland.mp3" />
-    <BundleResource Include="Resources\tonyblair.mp3" />
-    <BundleResource Include="Resources\usainbolt.mp3" />
-    <BundleResource Include="Resources\vayacondios.mp3" />
-    <BundleResource Include="Resources\wallstreet.mp3" />
+    <BundleResource Include="Resources\becaus.png" />
+    <BundleResource Include="Resources\becaus%402x.png" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\logo%402x.png" />
+    <BundleResource Include="Resources\play.png" />
+    <BundleResource Include="Resources\play%402x.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\sounds\01_amstelgoldrace.mp3" />
+    <BundleResource Include="Resources\sounds\02_beegees.mp3" />
+    <BundleResource Include="Resources\sounds\03_blackeyedpeas.mp3" />
+    <BundleResource Include="Resources\sounds\04_ciudadjuarez.mp3" />
+    <BundleResource Include="Resources\sounds\05_doscervezas.mp3" />
+    <BundleResource Include="Resources\sounds\06_dowjones.mp3" />
+    <BundleResource Include="Resources\sounds\07_driekwartier.mp3" />
+    <BundleResource Include="Resources\sounds\08_europeanmotorshow.mp3" />
+    <BundleResource Include="Resources\sounds\09_eyjafjallajokull.mp3" />
+    <BundleResource Include="Resources\sounds\10_gameofshadows.mp3" />
+    <BundleResource Include="Resources\sounds\11_goldenglobes.mp3" />
+    <BundleResource Include="Resources\sounds\12_iowa.mp3" />
+    <BundleResource Include="Resources\sounds\13_judelaw.mp3" />
+    <BundleResource Include="Resources\sounds\14_kattepis.mp3" />
+    <BundleResource Include="Resources\sounds\15_markwebber.mp3" />
+    <BundleResource Include="Resources\sounds\16_milow.mp3" />
+    <BundleResource Include="Resources\sounds\17_norahjones.mp3" />
+    <BundleResource Include="Resources\sounds\18_obama.mp3" />
+    <BundleResource Include="Resources\sounds\19_partofthejob.mp3" />
+    <BundleResource Include="Resources\sounds\20_pussy.mp3" />
+    <BundleResource Include="Resources\sounds\21_rauweblues.mp3" />
+    <BundleResource Include="Resources\sounds\22_rocknroll.mp3" />
+    <BundleResource Include="Resources\sounds\23_score.mp3" />
+    <BundleResource Include="Resources\sounds\24_sherlockholmes.mp3" />
+    <BundleResource Include="Resources\sounds\25_sighnomore.mp3" />
+    <BundleResource Include="Resources\sounds\26_tomorrowland.mp3" />
+    <BundleResource Include="Resources\sounds\27_tonyblair.mp3" />
+    <BundleResource Include="Resources\sounds\28_usainbolt.mp3" />
+    <BundleResource Include="Resources\sounds\29_vayacondios.mp3" />
+    <BundleResource Include="Resources\sounds\30_wallstreet.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
 </Project>

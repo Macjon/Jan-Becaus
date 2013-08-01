@@ -5,13 +5,21 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon</string>
+		<string>Icon@2x</string>
+		<string>Icon-72</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>Jan Becaus</string>
+	<key>CFBundleVersion</key>
+	<string>0.5</string>
 </dict>
 </plist>
-
